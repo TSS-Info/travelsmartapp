@@ -1,0 +1,105 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-label stacked>E-mail:</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 class="sgnupTxt">
+        <ion-input type="email"></ion-input>
+        <ion-icon ios="ios-mail" md="md-mail" class="sgnupIcn"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-label stacked>First name:</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 class="sgnupTxt">
+        <ion-input type="text"></ion-input>
+        <ion-icon ios="ios-person" md="md-person" class="sgnupIcn"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-label stacked>Last name:</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 class="sgnupTxt">
+        <ion-input type="text"></ion-input>
+        <ion-icon ios="ios-person" md="md-person" class="sgnupIcn"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-label stacked>Create a password:</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 class="sgnupTxt">
+        <ion-input type="password"></ion-input>
+        <ion-icon ios="ios-lock" md="md-lock" class="sgnupIcn"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-label stacked>Confrim password:</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 class="sgnupTxt">
+        <ion-input type="password"></ion-input>
+        <ion-icon ios="ios-lock" md="md-lock" class="sgnupIcn"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <p class="dtbTl">Birthday:</p>
+        <p class="dtbTxt">To register you must be atleast 18 years old. Others do not see your date of birth.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4 class="sgnupTxt">
+        <ion-datetime displayFormat="DD" [(ngModel)]="Date" placeholder="Date"></ion-datetime>
+        <ion-icon name="ios-arrow-down-outline" class="dteIcn"></ion-icon>
+      </ion-col>
+      <ion-col col-4 class="sgnupTxt">
+        <ion-datetime displayFormat="MM" [(ngModel)]="Mnth" placeholder="Month"></ion-datetime>
+        <ion-icon name="ios-arrow-down-outline" class="dteIcn"></ion-icon>
+      </ion-col>
+      <ion-col col-4 class="sgnupTxt">
+        <ion-datetime displayFormat="YYYY" [(ngModel)]="Year" placeholder="Year"></ion-datetime>
+        <ion-icon name="ios-arrow-down-outline" class="dteIcn"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-1>
+        <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+      </ion-col>
+      <ion-col col-11>
+        <p class="dtbTxt">I would like to recive marketing and policy information from traveller and its patners.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <p class="acntCnf">Already have an account?</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="logo">
+      <ion-col col-12>
+          <button ion-button (click)="register()">SIGN UP</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

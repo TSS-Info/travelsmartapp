@@ -1,0 +1,13 @@
+page-boarding-pass {
+    .toolbar-background-md {
+        border-color: #b2b2b2;
+        border-bottom: 7px solid #D36886;
+        // background: #f8f8f8;
+        background: linear-gradient(to top right , #631228 50%, #D36886 50%);
+    }
+    ion-icon {
+       color: #D36886;
+       font-size: 32px;
+    }
+   
+}

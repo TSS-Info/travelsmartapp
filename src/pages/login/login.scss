@@ -1,0 +1,65 @@
+// Styles for all of the user pages:
+// Login, Signup, Support
+
+page-user {
+  .logo {
+    padding: 20px 0;
+    min-height: 200px;
+    text-align: center;
+
+    img {
+      max-width: 150px;
+    }
+  }
+
+  .list {
+    margin-bottom: 0;
+  }
+
+
+  .logo{
+    text-align: center;
+}
+img {
+    height: 100%;
+    width: 53%;
+}
+.content-md {
+    color: #000;
+    background-color: #EDE2D5;
+}
+.text-input-md {
+    background-color: white;
+    margin: 0;
+    height: 40px;
+    border: 1px solid #707070;
+    padding: 0;
+    width: calc(100% - 8px - 8px);
+}
+.title{
+  font-size: 65px;
+  margin: 0;
+  color: #D36886;
+}
+.subtitle{
+  font-size: 20px;
+  margin: 0;
+  margin-top: -10px;
+  color: #D36886;
+}
+.label-md[stacked] {
+  font-size: 20px;
+  color: #707070;
+  margin: 0;
+}
+.button-md{
+  height: 48px;
+  width: 118px;
+  font-size: 12px;
+  font-weight: 300;
+  background: linear-gradient(272deg,#F47071,#4527A0);
+}
+.lgGrd{
+  margin-top: 20px;
+}
+}
