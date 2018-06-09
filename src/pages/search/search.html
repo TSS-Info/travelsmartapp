@@ -1,0 +1,376 @@
+<ion-header>
+  <!-- <ion-navbar> -->
+  <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Speakers</ion-title> -->
+  <ion-row>
+    <ion-col col-12 class="srchBr">
+      <ion-searchbar color="primary" [(ngModel)]="queryText" placeholder="Type a place">
+      </ion-searchbar>
+      <ion-icon ios="ios-add" md="md-add" class="srchAdd"></ion-icon>
+      <ion-icon ios="ios-mic" md="md-mic" class="srchmic"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <!-- </ion-navbar> -->
+  <ion-row class="srchHed">
+    <ion-col col-4 class="srchBr">
+      <ion-datetime displayFormat="MM/DD/YYYY" pickerFormat="MM/DD/YYYY" placeholder="Date" [(ngModel)]="myDate"></ion-datetime>
+      <ion-icon ios="ios-plane" md="md-plane" item-end class="inputIcn"></ion-icon>
+    </ion-col>
+    <ion-col col-1></ion-col>
+    <ion-col col-7 class="srchBr">
+      <ion-input type="tel" placeholder="Persons"></ion-input>
+      <ion-icon ios="ios-person" md="md-person" class="inputIcn"></ion-icon>
+    </ion-col>
+
+  </ion-row>
+  <ion-row class="srchHed">
+    <ion-col col-7 class="srchBr">
+      <ion-input type="tel" placeholder="Places to stay"></ion-input>
+      <ion-icon ios="ios-camera" md="md-camera" class="inputIcn"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content class="outer-content speaker-list">
+  <ion-row>
+    <ion-col col-12>
+      <h1 class="strng1">Explore Traveller</h1>
+    </ion-col>
+  </ion-row>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="btnCol">
+        <button ion-button>PLACES TO STAY</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="RprtCrd">
+      <ion-item no-lines>
+        <ion-scroll scrollX="true">
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+        </ion-scroll>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="RprtCrd">
+      <ion-item no-lines>
+        <ion-scroll scrollX="true">
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+        </ion-scroll>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="btnCol">
+        <button ion-button>THINGS TO DO</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="RprtCrd">
+      <ion-item no-lines>
+        <ion-scroll scrollX="true">
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+        </ion-scroll>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="RprtCrd">
+      <ion-item no-lines>
+        <ion-scroll scrollX="true">
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+        </ion-scroll>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="btnCol">
+        <button ion-button>THINGS TO TRY</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="RprtCrd">
+      <ion-item no-lines>
+        <ion-scroll scrollX="true">
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+        </ion-scroll>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="RprtCrd">
+      <ion-item no-lines>
+        <ion-scroll scrollX="true">
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+        </ion-scroll>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-row>
+      <ion-col col-12>
+        <h1 class="strng2">In the spotlight</h1>
+      </ion-col>
+    </ion-row>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="btnCol">
+        <button ion-button>THINGS TO TRY</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="RprtCrd">
+      <ion-item no-lines>
+        <ion-scroll scrollX="true">
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+        </ion-scroll>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="RprtCrd">
+      <ion-item no-lines>
+        <ion-scroll scrollX="true">
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+          <ion-card class="rptBtn">
+            <img src="assets/imgs/img.PNG" class="logIconTab">
+            <p class="desc">The James Hotel</p>
+            <p class="title">HOTEL</p>
+          </ion-card>
+        </ion-scroll>
+      </ion-item>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

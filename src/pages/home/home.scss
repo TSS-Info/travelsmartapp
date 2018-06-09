@@ -1,0 +1,201 @@
+page-home {
+    .content-md{
+        background-color: #EDE2D5;
+        color: white;
+        // font-family: Runda, Medium;
+      }
+      .titleCrdImg {
+        opacity: 0.7;
+        height: 100%;
+      }
+      ion-card img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    //   @each $track, $value in auxiliary-categories() {
+    //    ion-item-sliding[track=#{$track}] ion-label {
+    //      border-left: 2px solid $value;
+    //      padding-left: 10px;
+    //    }
+    //   }
+    
+      ion-card {
+        position: relative;
+        text-align: center;
+        color: white;
+        height: 279px;
+        margin-top: 20px;
+      }
+      .card-md + ion-card {
+        margin-top: 20px;
+    }
+    
+      .frmPlc,.toPlc {
+        color: white;
+        font-size: 11px;
+        font-weight: 100;
+    }
+    .card-md h1 {
+      margin: 2px 0;
+      font-size: 40px;
+      font-weight: 100;
+      color: white;
+    }
+      .card-title,.card-title1 {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding-top: 0;
+      }
+      .card-title{
+        height: 279px;
+      }
+      .card-content {
+        position: absolute;
+        top: 67%;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 6px;
+        background-color: rgba(0, 0, 0, 0.54);
+      }
+      .title1{
+        background-color: #F47071;
+        height: 31px;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 8px;
+      }
+      .title2{
+        background-color: #212121;
+        height: 31px;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 8px;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+      }
+      .plnIcn{
+        color: #D36886;
+        font-size: 33px;
+        margin-top: 35%;
+      }
+      .icnLn{
+        padding: 0;
+        margin-top: 7%;
+        color: #707070;
+        font-weight: 600;
+      }
+      .hRow1 {
+        background-color: #8E8E8E;
+        margin: 0 10px 0 10px;
+        height: 1px;
+    }
+     .hRow  {
+        background-color: #383838;
+        margin: 8px 10px 10px 10px;
+        height: 1px;
+    }
+    
+    .trvlHd {
+      color: white;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    .trvlcnt{
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .brdPss{
+      background: linear-gradient(#F47071, #E26869,#7A3839);
+      height: 46px;
+        width: 180px;
+    }
+    .btnTxt{
+      font-size: 10px;
+    }
+    .prflTxt{
+      background-color: transparent;
+      color: white;
+    }
+    .prflImg{
+      border: 1px solid white;
+    }
+    ion-label {
+      white-space: initial;
+      font-size: 14px;
+    }
+    .styHd{
+      font-size: 24px;
+      color: white;
+    }
+    .styRating{
+      font-size: 8px;
+        color: #D36886;
+        margin-top: 5%;
+        padding: 1px;
+    }
+    .styPlc {
+      text-align: left;
+      color: white;
+      font-size: 12px;
+      font-weight: 100;
+    }
+    .styPlcIcn{
+      text-align: right;
+    }
+    .styCnt{
+      color: white;
+      font-size: 11px;
+      padding: 3px;
+        text-transform: uppercase;
+      background-color: linear-gradient(270deg,#F47071, #4527A0) !important;
+      background: linear-gradient(271deg,#F47071, #4527A0) !important;
+    }
+    .styRow{
+      padding: 5px;
+    }
+    .cntntRow{
+      padding-top: 10px;
+    }
+    .crdsGrd{
+      position: relative;
+      bottom: 40%;
+      margin-bottom: -100%;
+    }
+    .hdGrd{
+      height: 335px;
+      width: 100%;
+      padding: 0;
+    }
+    .grdCol{
+      padding: 0;
+    }
+    .headImg{
+      height: 100%;
+      width: 100%;
+    }
+    .minCrd{
+      background-color: transparent;
+    }
+    .headTxt{
+      font-size: 36px;
+      position: relative;
+      bottom: 103%;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 0;
+      margin-top: 4%
+    }
+}

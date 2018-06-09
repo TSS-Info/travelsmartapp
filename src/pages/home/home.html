@@ -1,0 +1,301 @@
+<ion-content>
+  <!-- <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher> -->
+  <!--********************************* travel Card ****************************************-->
+  <ion-grid class="hdGrd">
+    <ion-row>
+      <ion-col col-12 class="grdCol">
+        <img src="assets/imgs/home/head_img.jpg" class="headImg">
+        <p class="headTxt">Your upcoming travels...</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="crdsGrd">
+    <ion-card class="minCrd">
+      <!-- <img src="assets/imgs/home/background_image.jpg" class="titleCrdImg"> -->
+      <div class="card-title">
+        <ion-row>
+          <ion-col col-6 class="title1">
+            Transportation
+          </ion-col>
+          <ion-col col-6 class="title2">
+            Gate Closed at 10.00
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="cntntRow">
+          <ion-col col-4>
+            <h1>LHR</h1>
+            <p class="frmPlc">London,England</p>
+          </ion-col>
+          <ion-col col-1 class="icnLn">____</ion-col>
+          <ion-col col-2>
+            <ion-icon name="ios-plane" class="plnIcn"></ion-icon>
+          </ion-col>
+          <ion-col col-1 class="icnLn">____</ion-col>
+          <ion-col col-4>
+            <h1>JKF</h1>
+            <p class="toPlc">New York City, USA</p>
+          </ion-col>
+        </ion-row>
+        <hr class="hRow">
+        <ion-row>
+          <ion-col col-4>
+            <p class="trvlHd">Flight</p>
+            <p class="trvlcnt">VA2501</p>
+          </ion-col>
+          <ion-col col-4>
+            <p class="trvlHd">Seat</p>
+            <p class="trvlcnt">35a</p>
+          </ion-col>
+          <ion-col col-4>
+            <p class="trvlHd">Gate</p>
+            <p class="trvlcnt">34B</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="cntntRow">
+          <ion-col col-4>
+            <p class="trvlHd">Departs</p>
+            <p class="trvlcnt">10.25</p>
+          </ion-col>
+          <ion-col col-8>
+            <button ion-button class="brdPss" (click)="viewBrdngPss()">
+              <span class="btnTxt">View Boarding Pass</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card>
+
+    <!--********************************* travel Card ****************************************-->
+
+
+    <!--********************************* vehicle Card ****************************************-->
+    <ion-card>
+      <img src="assets/imgs/home/car_img.jpg" />
+      <div class="card-title">
+        <ion-row>
+          <ion-col col-6 class="title1">
+            Transportation
+          </ion-col>
+          <ion-col col-6 class="title2">
+            27-3-2018
+          </ion-col>
+        </ion-row>
+
+
+        <ion-item class="prflTxt">
+          <ion-avatar item-start>
+            <img src="assets/imgs/home/profile_img.jpg" class="prflImg">
+          </ion-avatar>
+          <div>John from Corey Car Services is confirmed for pickup at
+            <span>15.40</span>.</div>
+        </ion-item>
+
+        <hr>
+        <ion-row class="cntntRow">
+          <ion-col col-4>
+            <p class="trvlHd">Flight</p>
+            <p class="trvlcnt">VA2501</p>
+          </ion-col>
+          <ion-col col-4>
+            <p class="trvlHd">Seat</p>
+            <p class="trvlcnt">35a</p>
+          </ion-col>
+          <ion-col col-4>
+            <p class="trvlHd">Gate</p>
+            <p class="trvlcnt">34B</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="cntntRow">
+          <ion-col col-4>
+            <p class="trvlHd">Departs</p>
+            <p class="trvlcnt">10.25</p>
+          </ion-col>
+          <ion-col col-8>
+            <button ion-button class="brdPss">
+              <span class="btnTxt">View Boarding Pass</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card>
+    <!--********************************* vehicle Card ****************************************-->
+
+    <!--********************************* Stay Card ****************************************-->
+
+    <ion-card>
+      <img src="assets/imgs/home/stay_img.jpg" />
+      <div class="card-title1">
+        <ion-row>
+          <ion-col col-6 class="title1">
+            Place to stay
+          </ion-col>
+          <ion-col col-6 class="title2">
+            27/3 - 31/3
+          </ion-col>
+        </ion-row>
+
+      </div>
+      <div class="card-content">
+        <ion-row>
+          <ion-col col-8>
+            <p class="styHd">The James Hotel</p>
+          </ion-col>
+          <ion-col col-4 class="styRating">
+            <ion-icon ios="ios-star" md="md-star" *ngFor="let number of [0,1,2,3,4]"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <hr class="hRow1">
+
+        <ion-row class="styRow">
+          <ion-col col-1 class="styPlcIcn">
+            <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
+          </ion-col>
+          <ion-col col-8>
+            <p class="styPlc">36 W 38th St, New York, NY 10018</p>
+          </ion-col>
+          <ion-col col-3>
+            <p class="styCnt">4 Nights</p>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card>
+    <!--********************************* stay Card ****************************************-->
+
+
+    <!--********************************* tour Card ****************************************-->
+    <ion-card>
+      <img src="assets/imgs/home/tour_img2.jpg" />
+      <div class="card-title1">
+        <ion-row>
+          <ion-col col-6 class="title1">
+            Things to do
+          </ion-col>
+          <ion-col col-6 class="title2">
+            27-03-2018
+          </ion-col>
+        </ion-row>
+
+      </div>
+      <div class="card-content">
+        <ion-row>
+          <ion-col col-8>
+            <p class="styHd">Lady Liberty Tour</p>
+          </ion-col>
+          <ion-col col-4 class="styRating">
+            <ion-icon ios="ios-star" md="md-star" *ngFor="let number of [0,1,2,3]"></ion-icon>
+            <ion-icon ios="ios-star-half" md="md-star-half"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <hr class="hRow1">
+
+        <ion-row class="styRow">
+          <ion-col col-1 class="styPlcIcn">
+            <ion-icon name="ios-time" md="md-time"></ion-icon>
+          </ion-col>
+          <ion-col col-11>
+            <p class="styPlc">Thursday 4th Jan at 09.15</p>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card>
+
+    <!--********************************* tour Card ****************************************-->
+
+
+    <!--********************************* food Card ****************************************-->
+    <ion-card>
+      <img src="assets/imgs/home/food_img.jpg" />
+      <div class="card-title1">
+        <ion-row>
+          <ion-col col-6 class="title1">
+            Place to stay
+          </ion-col>
+          <ion-col col-6 class="title2">
+            27/3 - 31/3
+          </ion-col>
+        </ion-row>
+
+      </div>
+      <div class="card-content">
+        <ion-row>
+          <ion-col col-8>
+            <p class="styHd">Sushi Place</p>
+          </ion-col>
+          <ion-col col-4 class="styRating">
+            <ion-icon ios="ios-star" md="md-star" *ngFor="let number of [0,1,2,3,4]"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <hr class="hRow1">
+
+        <ion-row class="styRow">
+          <ion-col col-1 class="styPlcIcn">
+            <ion-icon name="ios-time" md="md-time"></ion-icon>
+          </ion-col>
+          <ion-col col-11>
+            <p class="styPlc">Thursday 4th Jan at 13.15</p>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card>
+
+  </ion-grid>
+  <!--********************************* food Card ****************************************-->
+
+
+  <!-- <ion-list #scheduleList [hidden]="shownSessions === 0">
+
+    <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
+
+      <ion-item-divider sticky>
+        <ion-label>
+          {{group.time}}
+        </ion-label>
+      </ion-item-divider>
+
+      <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">
+
+        <button ion-item (click)="goToSessionDetail(session)">
+          <h3>{{session.name}}</h3>
+          <p>
+            {{session.timeStart}} &mdash;
+            {{session.timeEnd}}:
+            {{session.location}}
+          </p>
+        </button>
+
+        <ion-item-options>
+          <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
+            Favorite
+          </button>
+          <button ion-button color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')" *ngIf="segment === 'favorites'">
+            Remove
+          </button>
+        </ion-item-options>
+
+      </ion-item-sliding>
+
+    </ion-item-group>
+
+  </ion-list>
+
+  <ion-list-header [hidden]="shownSessions > 0">
+      No Sessions Found
+  </ion-list-header>
+
+  <ion-fab bottom right #fab>
+    <button ion-fab><ion-icon name="share"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="vimeo" (click)="openSocial('Vimeo', fab)"><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab color="google" (click)="openSocial('Google+', fab)"><ion-icon name="logo-googleplus"></ion-icon></button>
+      <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab> -->
+
+
+</ion-content>
