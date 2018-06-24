@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -13,6 +14,8 @@ import { SignupPage } from '../pages/signup/signup';
 import { RegisterPage } from '../pages/register/register';
 import { ConformationPage } from '../pages/conformation/conformation';
 import { BoardingPassPage } from '../pages/boarding-pass/boarding-pass';
+import { FrstTmOnBrdPage } from '../pages/frst-tm-on-brd/frst-tm-on-brd';
+import { LgnMethodPage } from '../pages/lgn-method/lgn-method';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { BoardingPassPage } from '../pages/boarding-pass/boarding-pass';
     TabsPage,
     HomePage,
     BoardingPassPage,
-    SearchPage
+    SearchPage,
+    FrstTmOnBrdPage,
+    LgnMethodPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,8 @@ import { BoardingPassPage } from '../pages/boarding-pass/boarding-pass';
       // iconMode: 'ios',
       // tabsPlacement: 'bottom'
     }
-    )
+    ),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,7 +52,9 @@ import { BoardingPassPage } from '../pages/boarding-pass/boarding-pass';
     TabsPage,
     HomePage,
     BoardingPassPage,
-    SearchPage
+    SearchPage,
+    FrstTmOnBrdPage,
+    LgnMethodPage
   ],
   providers: [
     StatusBar,

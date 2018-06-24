@@ -1,56 +1,46 @@
-<!-- <ion-header>
-	<ion-navbar>
-		<button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-		<ion-title>Login</ion-title>
-	</ion-navbar>
-</ion-header> -->
-
-
 <ion-content padding>
-		<ion-grid class="logo">
-		  <ion-row>
+	<ion-grid class="logo">
+		<ion-row>
 			<ion-col col-12>
-			  <img src="assets/imgs/tlogo.png">
+				<img src="assets/imgs/tlogo.png">
 			</ion-col>
-		  </ion-row>
-		  <ion-row>
+		</ion-row>
+		<ion-row>
 			<ion-col col-12>
-			  <p class="title">Traveller</p>
-			  <p class="subtitle">Your Travel Patner</p>
+				<p class="title">Traveller</p>
+				<p class="subtitle">Your Travel Patner</p>
 			</ion-col>
-		  </ion-row>
-		</ion-grid>
-	  
-		<ion-grid class="lgGrd">
-		  <ion-row>
+		</ion-row>
+	</ion-grid>
+
+	<ion-grid class="lgGrd">
+		<ion-row>
 			<ion-col col-12>
-			  <ion-label stacked>Username:</ion-label>
+				<ion-label stacked>Username:</ion-label>
 			</ion-col>
-		  </ion-row>
-		  <ion-row>
+		</ion-row>
+		<ion-row>
 			<ion-col col-12>
-			  <ion-input type="text"></ion-input>
+				<ion-input type="text" [(ngModel)]="usrNm"></ion-input>
 			</ion-col>
-		  </ion-row>
-		  <ion-row>
-			  <ion-col col-12>
+		</ion-row>
+		<ion-row>
+			<ion-col col-12>
 				<ion-label stacked>Password:</ion-label>
-			  </ion-col>
-			</ion-row>
-			<ion-row>
-			  <ion-col col-12>
-				<ion-input type="password"></ion-input>
-			  </ion-col>
-			</ion-row>
-			<ion-row class="logo">
-			  <ion-col col-12>
-				  <button ion-button (click)="onLogin()">Login</button>
-			  </ion-col>
-			</ion-row>
-		</ion-grid>
-	  </ion-content>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-12>
+				<ion-input type="password" [(ngModel)]="usrPswrd"></ion-input>
+			</ion-col>
+		</ion-row>
+		<ion-row class="logo">
+			<ion-col col-12>
+				<button ion-button (click)="onLogin()">Login</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>
 
 <!-- <ion-content>
 	<div class="logo">

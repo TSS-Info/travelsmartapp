@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { LoginPage } from '../login/login';
-import { LgnMethodPage } from '../lgn-method/lgn-method';
+import { HomePage } from '../home/home';
+import { TabsPage } from '../tabs-page/tabs-page';
 
 /**
- * Generated class for the SignupPage page.
+ * Generated class for the FrstTmOnBrdPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,22 +12,19 @@ import { LgnMethodPage } from '../lgn-method/lgn-method';
 
 @IonicPage()
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html',
+  selector: 'page-frst-tm-on-brd',
+  templateUrl: 'frst-tm-on-brd.html',
 })
-export class SignupPage {
+export class FrstTmOnBrdPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPage');
+    console.log('ionViewDidLoad FrstTmOnBrdPage');
   }
-  signin(){
-    this.navCtrl.push(LoginPage);
-  }
-  lgnMethod(){
-    this.navCtrl.push(LgnMethodPage);
+  phoneCnfrm(){
+    this.navCtrl.push(TabsPage);
   }
 
 }

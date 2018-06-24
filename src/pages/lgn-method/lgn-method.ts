@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { LoginPage } from '../login/login';
-import { LgnMethodPage } from '../lgn-method/lgn-method';
+import { RegisterPage } from '../register/register';
 
 /**
- * Generated class for the SignupPage page.
+ * Generated class for the LgnMethodPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,22 +11,19 @@ import { LgnMethodPage } from '../lgn-method/lgn-method';
 
 @IonicPage()
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html',
+  selector: 'page-lgn-method',
+  templateUrl: 'lgn-method.html',
 })
-export class SignupPage {
+export class LgnMethodPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPage');
+    console.log('ionViewDidLoad LgnMethodPage');
   }
-  signin(){
-    this.navCtrl.push(LoginPage);
-  }
-  lgnMethod(){
-    this.navCtrl.push(LgnMethodPage);
+  mailRgstrtn(){
+    this.navCtrl.push(RegisterPage);
   }
 
 }

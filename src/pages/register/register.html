@@ -15,7 +15,7 @@
     </ion-row>
     <ion-row>
       <ion-col col-12 class="sgnupTxt">
-        <ion-input type="email"></ion-input>
+        <ion-input type="email" [(ngModel)]="email"></ion-input>
         <ion-icon ios="ios-mail" md="md-mail" class="sgnupIcn"></ion-icon>
       </ion-col>
     </ion-row>
@@ -26,7 +26,7 @@
     </ion-row>
     <ion-row>
       <ion-col col-12 class="sgnupTxt">
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [(ngModel)]="fstNm"></ion-input>
         <ion-icon ios="ios-person" md="md-person" class="sgnupIcn"></ion-icon>
       </ion-col>
     </ion-row>
@@ -37,7 +37,7 @@
     </ion-row>
     <ion-row>
       <ion-col col-12 class="sgnupTxt">
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [(ngModel)]="lstNm"></ion-input>
         <ion-icon ios="ios-person" md="md-person" class="sgnupIcn"></ion-icon>
       </ion-col>
     </ion-row>
@@ -48,7 +48,7 @@
     </ion-row>
     <ion-row>
       <ion-col col-12 class="sgnupTxt">
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="pswrd"></ion-input>
         <ion-icon ios="ios-lock" md="md-lock" class="sgnupIcn"></ion-icon>
       </ion-col>
     </ion-row>
@@ -59,7 +59,7 @@
     </ion-row>
     <ion-row>
       <ion-col col-12 class="sgnupTxt">
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="cnfrmpswrd"></ion-input>
         <ion-icon ios="ios-lock" md="md-lock" class="sgnupIcn"></ion-icon>
       </ion-col>
     </ion-row>
@@ -71,15 +71,15 @@
     </ion-row>
     <ion-row>
       <ion-col col-4 class="sgnupTxt">
-        <ion-datetime displayFormat="DD" [(ngModel)]="Date" placeholder="Date"></ion-datetime>
+        <ion-datetime displayFormat="DD" [(ngModel)]="date" placeholder="Date"></ion-datetime>
         <ion-icon name="ios-arrow-down-outline" class="dteIcn"></ion-icon>
       </ion-col>
       <ion-col col-4 class="sgnupTxt">
-        <ion-datetime displayFormat="MM" [(ngModel)]="Mnth" placeholder="Month"></ion-datetime>
+        <ion-datetime displayFormat="MM" [(ngModel)]="mnth" placeholder="Month"></ion-datetime>
         <ion-icon name="ios-arrow-down-outline" class="dteIcn"></ion-icon>
       </ion-col>
       <ion-col col-4 class="sgnupTxt">
-        <ion-datetime displayFormat="YYYY" [(ngModel)]="Year" placeholder="Year"></ion-datetime>
+        <ion-datetime displayFormat="YYYY" [(ngModel)]="year" placeholder="Year"></ion-datetime>
         <ion-icon name="ios-arrow-down-outline" class="dteIcn"></ion-icon>
       </ion-col>
     </ion-row>
